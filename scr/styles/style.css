@@ -1,0 +1,138 @@
+* {
+    --color-1: #080708;
+    --color-2: #f18805;
+    --color-3: #d95d39;
+    --color-4: #f0f0f0;
+}
+
+body {
+    background-color: var(--color-4);
+}
+
+.header{
+    padding: 1rem;
+    background-color: var(--color-3);
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sandwich {
+    display: inline-block;
+    cursor: pointer;
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 45px;
+    height: 7px;
+    background-color: var(--color-4);
+    border-radius: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-12px, 6px) ;
+    transform: rotate(-45deg) translate(-12px, 6px) ;
+}
+  
+.change .bar2 {
+    opacity: 0;
+}
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-11px, -8px) ;
+    transform: rotate(45deg) translate(-11px, -8px) ;
+}
+
+.navbar {
+    margin: 2rem auto;
+    transition: 0.4s all;
+    display: none;
+}
+
+.navbar ul li {
+    margin: 2rem auto;
+    transition: 0.4s;
+}
+
+.open {
+    display: block;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: var(--color-4);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    transition: 0.5s all;
+    padding: 0.2rem;
+}
+.navbar ul li a:hover{
+    border-radius: 10px;
+    border-bottom: 0.3rem solid #f18805;
+}
+
+.main{
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main_header{
+    width: 90%;
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--color-3);
+    text-align: center;
+    transition: 0.5s all;
+}
+.main_header:hover{
+    border-radius: 10px;
+    border-bottom: 0.3rem solid #f18805;
+}
+
+.card {
+    margin: 10rem 4rem;
+    border: 0.3rem solid var(--color-3);
+    box-shadow: 0px 0px 50px #d95c3981;
+    border-radius: 70px 0 70px 0;
+    width: 20rem;
+    height: 27rem;
+    color: var(--color-1);
+    transition: 0.4s all;
+    cursor: pointer;
+}
+
+.main a:hover > .card{
+    border: 0.4rem solid var(--color-2);
+    box-shadow: 0px 0px 50px #f187058e;
+    transform: scale(1.1)
+}
+
+.card h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 1rem 0.5rem 0.5rem;
+}
+
+.card p {
+    margin: 0 1rem 0.5rem 0.5rem;
+}
+
+.card div img{
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 70px 0 70px 0;
+}
+
