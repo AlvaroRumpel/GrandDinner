@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Grand Dinner</title>
+</head>
+<body>
+    <header class="header">
+        <div class="sandwich" id="menu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./comidas.html">Comidas</a>
+                </li>
+                <li>
+                    <a href="./bebidas.html">Bebidas</a>
+                </li>
+                <li>
+                    <a href="./index.html">Pedidos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <header class="main_header">Adicionar Comida</header>
+        <form action="" class="form" name="form">
+            <div>
+                <label for="codigo" name="codigo">Código</label>
+                <input id="codigo" type="number">
+            </div>
+            <div>
+                <label for="nome" name="nome">Nome</label>
+                <input id="nome" type="text">
+            </div>
+            <div>
+                <label for="descricao" name="descricao">Descrição</label>
+                <textarea id="descricao"></textarea>
+            </div>
+            <div>
+                <label for="valorUnitario" name="valorUnitario">Valor unitario</label>
+                <input id="valorUnitario" type="number">
+            </div>
+            <div>
+                <label for="dataValidade" name="dataValidade">Data de validade</label>
+                <input id="dataValidade" type="date">
+            </div>
+            <div>
+                <label for="peso" name="peso">Peso</label>
+                <input id="peso" type="number">
+            </div>
+            <div>
+                <label for="tipo" name="tipo">Tipo</label>
+                <input id="tipo" type="text">
+            </div>
+            <button class="btn btn-save" type='button' id="buttonSave">Salvar!</button>
+        </form>
+    </main>
+    <script type="module" src="../JS/index.js"></script>
+    <script type="module" src="../JS/addComidaFront.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Grand Dinner</title>
+</head>
+<body>
+    <header class="header">
+        <div class="sandwich" id="menu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./comidas.html">Comidas</a>
+                </li>
+                <li>
+                    <a href="./bebidas.html">Bebidas</a>
+                </li>
+                <li>
+                    <a href="./index.html">Pedidos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <header class="main_header">Bebidas</header>
+        <table class="main_table">
+            <tr class="main_tr">
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Valor Unitario</th>
+                <th>Data de Validade</th>
+                <th>Litros</th>
+                <th>Tipo</th>
+                <th>Adicionar ao pedido</th>
+            </tr>
+        </table>
+        <button class="btn btn-save" id="btnSave">Salvar pedido!</button>
+        <button class="btn btn-add" onclick="window.location.href = './adicionar_bebida.html'">Adicionar bebida!</button>
+    </main>
+    <script type="module" src="../JS/index.js"></script>
+    <script type="module" src="../JS/listarBebidaFront.js"></script>
+</body>
+</html>
